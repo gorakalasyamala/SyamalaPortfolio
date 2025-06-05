@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.resume-button {
+    height: 56px;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.resume-button:hover {
+    transform: scale(1.05);
+}
+
+nav {
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#header .left_header h1 {
+    font-weight: normal;
+    font-size: 48px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    align-content: center;
+}
+
+.stroke {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    letter-spacing: -1px;
+    font-weight: 900;
+    text-stroke: 1px #000000;
+    -webkit-text-stroke: 1.5px #000000;
+}
+
+.socials {
+    display: flex;
+    gap: 20px;
+}
+
+.block {
+    border: 2px solid #000000;
+    padding: 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.block:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+#header {
+    display: flex;
+    gap: 20px;
+    padding-top: 100px;
+    align-items: center;
+}
+
+#skills h1 {
+    font-weight: normal;
+    font-size: 48px;
+    text-align: center;
+}
+
+.programmingskills {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.skill {
+    text-align: center;
+    border: 2px solid #000000;
+    padding: 40px;
+    border-radius: 4px;
+}
+
+.programmingskills .skill p {
+    margin-bottom: 0;
+}
+
+#projects h1 {
+    font-weight: normal;
+    font-size: 48px;
+    text-align: center;
+}
+
+#projects {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px 0 80px;
+    margin-top: 80px;
+
+}
+
+.project {
+    border: 2px solid #71717A;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+
+}
+
+.project.gray {
+    background: #27272A;
+}
+
+.project-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.left_contact h1 {
+    font-weight: normal;
+    font-size: 48px;
+}
+
+#me {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.footer {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #ffffff;
+
+}
+
+#footer {
+    background-color: #000000;
+}

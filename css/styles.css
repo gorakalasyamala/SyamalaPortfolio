@@ -59,6 +59,7 @@ nav .container {
     display: flex;
     list-style-type: none;
     gap: 20px;
+    align-items: center;
 
 }
 
@@ -99,9 +100,6 @@ nav .container {
 .block:hover {
     transform: scale(1.05);
 }
-
-
-
 
 #header {
     display: flex;
@@ -157,8 +155,21 @@ nav .container {
 
 }
 
-.project.gray {
+.project:nth-child(2n+1) {
     background: #27272A;
+}
+
+.project h2 {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.project .pill {
+    font-size: 13px;
+    border: 1px solid #71717A;
+    padding: 5px 10px;
+    border-radius: 4px;
 }
 
 .project-image {

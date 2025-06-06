@@ -146,10 +146,13 @@
     <section id="footer">
         <div class="footer container">
             <img src="images/syam.svg" alt="Syamala Logo" class="syamala-logo">
-            <p>© 2025 Gorakala Syamala</p>
+            <p>© <span id="Year"></span> Gorakala Syamala</p>
         </div>
     </section>
-
+    <script>
+        const d = new Date()
+        document.getElementById("Year").innerText = d.getFullYear();
+    </script>
 </body>
 
 </html>

@@ -317,8 +317,10 @@ img {
         display: flex;
     }
 
-    a {
+    nav a {
         color: #ffffff !important;
+        font-size: 30px;
+        margin-bottom: 15px;
     }
 
     .Burger {
@@ -347,7 +349,7 @@ img {
 
     nav .container {
         padding-left: 30px;
-        padding-bottom: 30px;
+        padding-right: 30px;
     }
 
 

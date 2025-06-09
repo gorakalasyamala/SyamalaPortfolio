@@ -13,16 +13,31 @@
         <div class="container">
 
             <img src="images/Logo.svg" alt="Syamala Logo" class="logo">
-            <ul class="nav-links">
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#me">Me</a></li>
+                <li>
+                    <a target="_blank"
+                        href="https://drive.google.com/file/d/1vc9YB6e9Xs8N1A0hYAkVINcAMewM10DY/view?usp=drive_link"
+                        class="resume">Resume <img src="images/download.svg"></a>
+                </li>
             </ul>
             <a target="_blank"
                 href="https://drive.google.com/file/d/1vc9YB6e9Xs8N1A0hYAkVINcAMewM10DY/view?usp=drive_link"
                 class="resume-button">Resume <img src="images/download.svg"></a>
+            <span onclick="Burger()" id="Menu-button" class="Menu-button"><img src="images/menu.svg" class="Burger">
+                <img src="images/cross.svg" class=" times"></span>
+
         </div>
     </nav>
+
+    <script>
+        function Burger() {
+            document.getElementById("nav-links").classList.toggle("menu-open");
+            document.getElementById("Menu-button").classList.toggle("menu-open");
+        }
+    </script>
 
 
     <div class="container">
@@ -194,6 +209,7 @@
         const d = new Date()
         document.getElementById("Year").innerText = d.getFullYear();
     </script>
+
 </body>
 
 </html>

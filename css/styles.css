@@ -34,6 +34,20 @@ body {
     transition: all 0.3s ease;
 }
 
+.nav-links .resume {
+    height: 56px;
+    background-color: #000000;
+    color: #ffffff;
+    display: none;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
 .resume-button:hover {
     transform: scale(1.05);
 }
@@ -63,10 +77,14 @@ nav .container {
 
 }
 
+
+
 .nav-links a {
     text-decoration: none;
     color: #000000;
 }
+
+
 
 #header .left_header h1 {
     font-weight: normal;
@@ -118,6 +136,7 @@ nav .container {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 
 }
 
@@ -126,6 +145,7 @@ nav .container {
     border: 2px solid #000000;
     padding: 40px;
     border-radius: 4px;
+    width: calc((100% - 100px)/6);
 }
 
 .programmingskills .skill p {
@@ -205,4 +225,135 @@ nav .container {
 
 #footer {
     background-color: #000000;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.container .Menu-button {
+    display: none;
+}
+
+.Burger {
+
+    cursor: pointer;
+    display: none;
+}
+
+
+
+@media screen and (max-width : 767px) {
+
+
+    #header {
+        flex-direction: column-reverse;
+        padding: 10px;
+    }
+
+    #skills {
+        padding: 10px;
+
+    }
+
+    #projects,
+    #footer {
+        padding: 10px;
+    }
+
+    #header .left_header h1 {
+        font-size: 28px;
+    }
+
+    #me {
+        flex-direction: column;
+        padding: 10px;
+        gap: 20px
+    }
+
+
+
+    .programmingskills .skill {
+        width: calc((100% - 20px)/2);
+    }
+
+    .project-image,
+    .nav-links,
+    .nav-links h2 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container .Menu-button {
+        display: block;
+    }
+
+    .container .Menu-button .times {
+        display: none;
+    }
+
+    .resume-button {
+        display: none;
+    }
+
+    nav .nav-links .resume {
+        display: flex;
+    }
+
+    nav .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 50px;
+        margin: 0;
+        background: #27272A;
+
+    }
+
+    nav .nav-links.menu-open {
+        display: flex;
+    }
+
+    a {
+        color: #ffffff !important;
+    }
+
+    .Burger {
+        display: block;
+    }
+
+    .menu-open ul {
+        display: flex;
+    }
+
+    .Menu-button .times {
+        display: none;
+    }
+
+    .Menu-button.menu-open .times {
+        display: flex;
+    }
+
+    .Menu-button.menu-open .Burger {
+        display: none;
+    }
+
+    #header {
+        padding: 50px;
+    }
+
+    nav .container {
+        padding-left: 30px;
+        padding-bottom: 30px;
+    }
+
+
+
+
+
+
+
 }

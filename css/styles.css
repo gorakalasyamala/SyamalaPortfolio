@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Sora:wght@100..800&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -89,6 +89,11 @@ nav .container {
 }
 
 
+.left_header {
+    max-width: 60%;
+
+}
+
 
 #header .left_header h1 {
     font-weight: normal;
@@ -99,12 +104,9 @@ nav .container {
 }
 
 .stroke {
-    font-family: "Roboto", sans-serif;
-    color: #ffffff;
-    letter-spacing: -1px;
-    font-weight: 900;
-    text-stroke: 1px #000000;
-    -webkit-text-stroke: 1.5px #000000;
+    font-family: "Edu NSW ACT Cursive";
+
+    font-size: 54px;
 }
 
 .socials {
@@ -253,7 +255,11 @@ img {
 
     #header {
         flex-direction: column-reverse;
-        padding: 10px;
+        padding: 100px 15px 50px;
+    }
+
+    .stroke {
+        font-size: 28px;
     }
 
     #skills {
@@ -264,6 +270,12 @@ img {
     #projects,
     #footer {
         padding: 10px;
+    }
+
+    .left_header {
+        max-width: none;
+
+
     }
 
     #header .left_header h1 {
@@ -347,9 +359,6 @@ img {
         display: none;
     }
 
-    #header {
-        padding: 50px;
-    }
 
     nav .container {
         padding-left: 30px;
